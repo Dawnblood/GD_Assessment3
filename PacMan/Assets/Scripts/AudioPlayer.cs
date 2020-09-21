@@ -18,12 +18,12 @@ public class AudioPlayer : MonoBehaviour
 
     IEnumerator playNormalState() {
 
-        audio.Play();
+        audio.Play(); //Plays the Game_Start audio first
 
-        yield return new WaitForSeconds(Game_Start.length);
+        yield return new WaitForSeconds(Game_Start.length); //Wait for Game_Start audio to stop playing
 
-        audio.clip = Normal_State;
-        audio.Play();
+        audio.clip = Normal_State; //Change the Game_Start audio to the Normal_State audio
+        audio.Play(); //Plays the Normal_State audio
 
         yield return null;
     }

@@ -98,10 +98,10 @@ public class LevelGenerator : MonoBehaviour
         levelMap2 = new int[width, height1];
         levelMap3 = new int[width, height2];
         levelMap4 = new int[width, height2];
-        GenerateQuadrant1();
-        GenerateQuadrant2();
-        GenerateQuadrant3();
-        GenerateQuadrant4();
+        GenerateQuadrant1(); //Generate the top left quadrant
+        GenerateQuadrant2(); //Generate the top right quadrant
+        GenerateQuadrant3(); //Generate the bottom left quadrant
+        GenerateQuadrant4(); //Generate the bottom right quadrant
     }
 
     private void GenerateQuadrant1() {
@@ -111,7 +111,7 @@ public class LevelGenerator : MonoBehaviour
                 //1.2709 - across
                 //1.28 - down
                 
-                if (y == 0) {
+                if (y == 0) { //for all x values with a y value of 0
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, 0.35f, 0.0f));
                         Instantiate(DCtile[0], transform.position, Quaternion.identity);
@@ -183,7 +183,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 1) {
+                if (y == 1) { //for all x values with a y value of 1
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -0.93f, 0.0f));
                         Instantiate(DWtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -255,7 +255,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
                 
-                if (y == 2) {
+                if (y == 2) { //for all x values with a y value of 2
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -2.21f, 0.0f));
                         Instantiate(DWtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -327,7 +327,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
                     
-                if (y == 3) {
+                if (y == 3) { //for all x values with a y value of 3
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -3.49f, 0.0f));
                         Instantiate(DWtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -399,7 +399,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 4) {
+                if (y == 4) { //for all x values with a y value of 4
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -4.77f, 0.0f));
                         Instantiate(DWtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -471,7 +471,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 5) {
+                if (y == 5) { //for all x values with a y value of 5
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -6.05f, 0.0f));
                         Instantiate(DWtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -543,7 +543,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 6) {
+                if (y == 6) { //for all x values with a y value of 6
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -7.33f, 0.0f));
                         Instantiate(DWtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -615,7 +615,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 7) {
+                if (y == 7) { //for all x values with a y value of 7
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -8.61f, 0.0f));
                         Instantiate(DWtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -687,7 +687,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 8) {
+                if (y == 8) { //for all x values with a y value of 8
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -9.89f, 0.0f));
                         Instantiate(DWtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -759,7 +759,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 9) {
+                if (y == 9) { //for all x values with a y value of 9
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -11.17f, 0.0f));
                         Instantiate(DCtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -831,7 +831,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 10) {
+                if (y == 10) { //for all x values with a y value of 10
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -12.45f, 0.0f));
                         Instantiate(Emptile[0], transform.position, Quaternion.identity);
@@ -903,7 +903,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 11) {
+                if (y == 11) { //for all x values with a y value of 11
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -13.73f, 0.0f));
                         Instantiate(Emptile[0], transform.position, Quaternion.identity);
@@ -975,7 +975,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 12) {
+                if (y == 12) { //for all x values with a y value of 12
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -15.01f, 0.0f));
                         Instantiate(Emptile[0], transform.position, Quaternion.identity);
@@ -1047,7 +1047,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 13) {
+                if (y == 13) { //for all x values with a y value of 13
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -16.29f, 0.0f));
                         Instantiate(DWtile[0], transform.position, Quaternion.identity);
@@ -1119,7 +1119,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 14) {
+                if (y == 14) { //for all x values with a y value of 14
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -17.57f, 0.0f));
                         Instantiate(Emptile[0], transform.position, Quaternion.identity);
@@ -1229,7 +1229,7 @@ public class LevelGenerator : MonoBehaviour
                 //1.2709 - across
                 //1.28 - down
 
-                if (y == 0) {
+                if (y == 0) { //for all x values with a y value of 0
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, 0.35f, 0.0f));
                         Instantiate(Junctile[0], transform.position, Quaternion.Euler(0.0f, 180.0f, 0.0f));
@@ -1301,7 +1301,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 1) {
+                if (y == 1) { //for all x values with a y value of 1
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -0.93f, 0.0f));
                         Instantiate(Wtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -1373,7 +1373,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 2) {
+                if (y == 2) { //for all x values with a y value of 2
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -2.21f, 0.0f));
                         Instantiate(Wtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -1445,7 +1445,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 3) {
+                if (y == 3) { //for all x values with a y value of 3
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -3.49f, 0.0f));
                         Instantiate(Wtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -1517,7 +1517,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 4) {
+                if (y == 4) { //for all x values with a y value of 4
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -4.77f, 0.0f));
                         Instantiate(Ctile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 180.0f));
@@ -1589,7 +1589,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 5) {
+                if (y == 5) { //for all x values with a y value of 5
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -6.05f, 0.0f));
                         Instantiate(Peltile[0], transform.position, Quaternion.identity);
@@ -1661,7 +1661,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 6) {
+                if (y == 6) { //for all x values with a y value of 6
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -7.33f, 0.0f));
                         Instantiate(Wtile[0], transform.position, Quaternion.identity);
@@ -1733,7 +1733,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 7) {
+                if (y == 7) { //for all x values with a y value of 7
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -8.61f, 0.0f));
                         Instantiate(Ctile[0], transform.position, Quaternion.identity);
@@ -1805,7 +1805,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 8) {
+                if (y == 8) { //for all x values with a y value of 8
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -9.89f, 0.0f));
                         Instantiate(Wtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -1877,7 +1877,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 9) {
+                if (y == 9) { //for all x values with a y value of 9
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -11.17f, 0.0f));
                         Instantiate(Wtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -1949,7 +1949,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 10) {
+                if (y == 10) { //for all x values with a y value of 10
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -12.45f, 0.0f));
                         Instantiate(Ctile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 180.0f));
@@ -2021,7 +2021,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 11) {
+                if (y == 11) { //for all x values with a y value of 11
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -13.73f, 0.0f));
                         Instantiate(Emptile[0], transform.position, Quaternion.identity);
@@ -2093,7 +2093,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 12) {
+                if (y == 12) { //for all x values with a y value of 12
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -15.01f, 0.0f));
                         Instantiate(Emptile[0], transform.position, Quaternion.identity);
@@ -2165,7 +2165,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 13) {
+                if (y == 13) { //for all x values with a y value of 13
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -16.29f, 0.0f));
                         Instantiate(Emptile[0], transform.position, Quaternion.identity);
@@ -2237,7 +2237,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 14) {
+                if (y == 14) { //for all x values with a y value of 14
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -17.57f, 0.0f));
                         Instantiate(Emptile[0], transform.position, Quaternion.identity);
@@ -2338,7 +2338,7 @@ public class LevelGenerator : MonoBehaviour
                 //1.2709 - across
                 //1.28 - down
 
-                if (y == 0) {
+                if (y == 0) { //for all x values with a y value of 0
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -18.85f, 0.0f));
                         Instantiate(DWtile[0], transform.position, Quaternion.identity);
@@ -2410,7 +2410,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 1) {
+                if (y == 1) { //for all x values with a y value of 1
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -20.13f, 0.0f));
                         Instantiate(Emptile[0], transform.position, Quaternion.identity);
@@ -2482,7 +2482,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
                 
-                if (y == 2) {
+                if (y == 2) { //for all x values with a y value of 2
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -21.41f, 0.0f));
                         Instantiate(Emptile[0], transform.position, Quaternion.identity);
@@ -2554,7 +2554,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
                     
-                if (y == 3) {
+                if (y == 3) { //for all x values with a y value of 3
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -22.69f, 0.0f));
                         Instantiate(Emptile[0], transform.position, Quaternion.identity);
@@ -2626,7 +2626,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 4) {
+                if (y == 4) { //for all x values with a y value of 4
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -23.97f, 0.0f));
                         Instantiate(DCtile[0], transform.position, Quaternion.identity);
@@ -2698,7 +2698,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 5) {
+                if (y == 5) { //for all x values with a y value of 5
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -25.25f, 0.0f));
                         Instantiate(DWtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -2770,7 +2770,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 6) {
+                if (y == 6) { //for all x values with a y value of 6
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -26.53f, 0.0f));
                         Instantiate(DWtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -2842,7 +2842,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 7) {
+                if (y == 7) { //for all x values with a y value of 7
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -27.81f, 0.0f));
                         Instantiate(DWtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -2914,7 +2914,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 8) {
+                if (y == 8) { //for all x values with a y value of 8
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -29.09f, 0.0f));
                         Instantiate(DWtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -2986,7 +2986,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 9) {
+                if (y == 9) { //for all x values with a y value of 9
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -30.37f, 0.0f));
                         Instantiate(DWtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -3058,7 +3058,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 10) {
+                if (y == 10) { //for all x values with a y value of 10
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -31.65f, 0.0f));
                         Instantiate(DWtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -3130,7 +3130,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 11) {
+                if (y == 11) { //for all x values with a y value of 11
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -32.93f, 0.0f));
                         Instantiate(DWtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -3202,7 +3202,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 12) {
+                if (y == 12) { //for all x values with a y value of 12
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -34.21f, 0.0f));
                         Instantiate(DWtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -3274,7 +3274,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 13) {
+                if (y == 13) { //for all x values with a y value of 13
                     if (x == 0) {
                         transform.position = (new Vector3(0.641f, -35.49f, 0.0f));
                         Instantiate(DCtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -3378,7 +3378,7 @@ public class LevelGenerator : MonoBehaviour
                 //1.2709 - across
                 //1.28 - down
 
-                if (y == 0) {
+                if (y == 0) { //for all x values with a y value of 0
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -18.85f, 0.0f));
                         Instantiate(Emptile[0], transform.position, Quaternion.identity);
@@ -3450,7 +3450,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 1) {
+                if (y == 1) { //for all x values with a y value of 1
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -20.13f, 0.0f));
                         Instantiate(Emptile[0], transform.position, Quaternion.identity);
@@ -3522,7 +3522,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 2) {
+                if (y == 2) { //for all x values with a y value of 2
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -21.41f, 0.0f));
                         Instantiate(Emptile[0], transform.position, Quaternion.identity);
@@ -3594,7 +3594,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 3) {
+                if (y == 3) { //for all x values with a y value of 3
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -22.69f, 0.0f));
                         Instantiate(Ctile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, -90.0f));
@@ -3666,7 +3666,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 4) {
+                if (y == 4) { //for all x values with a y value of 4
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -23.97f, 0.0f));
                         Instantiate(Wtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -3738,7 +3738,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 5) {
+                if (y == 5) { //for all x values with a y value of 5
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -25.25f, 0.0f));
                         Instantiate(Wtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -3810,7 +3810,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 6) {
+                if (y == 6) { //for all x values with a y value of 6
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -26.53f, 0.0f));
                         Instantiate(Ctile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -3882,7 +3882,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 7) {
+                if (y == 7) { //for all x values with a y value of 7
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -27.81f, 0.0f));
                         Instantiate(Wtile[0], transform.position, Quaternion.identity);
@@ -3954,7 +3954,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 8) {
+                if (y == 8) { //for all x values with a y value of 8
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -29.09f, 0.0f));
                         Instantiate(Peltile[0], transform.position, Quaternion.identity);
@@ -4026,7 +4026,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 9) {
+                if (y == 9) { //for all x values with a y value of 9
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -30.37f, 0.0f));
                         Instantiate(Ctile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, -90.0f));
@@ -4098,7 +4098,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 10) {
+                if (y == 10) { //for all x values with a y value of 10
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -31.65f, 0.0f));
                         Instantiate(Wtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -4170,7 +4170,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 11) {
+                if (y == 11) { //for all x values with a y value of 11
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -32.93f, 0.0f));
                         Instantiate(Wtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -4242,7 +4242,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 12) {
+                if (y == 12) { //for all x values with a y value of 12
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -34.21f, 0.0f));
                         Instantiate(Wtile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 90.0f));
@@ -4314,7 +4314,7 @@ public class LevelGenerator : MonoBehaviour
                     }
                 }
 
-                if (y == 13) {
+                if (y == 13) { //for all x values with a y value of 13
                     if (x == 0) {
                         transform.position = (new Vector3(18.44172f, -35.49f, 0.0f));
                         Instantiate(Junctile[0], transform.position, Quaternion.Euler(0.0f, 0.0f, 180.0f));
@@ -4387,6 +4387,5 @@ public class LevelGenerator : MonoBehaviour
                 }
             }
         }
-
     }
 }
